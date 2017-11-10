@@ -1,0 +1,309 @@
+html{
+  font-size: 16px;
+  
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #403E3C;
+
+}
+
+header{
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.logo{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+nav{
+  text-decoration: none;
+}
+
+.desktop span{
+  margin: 1rem;
+  color: inherit;
+
+}
+
+.desktop span:hover{
+	border-bottom: 0.2rem solid #7FADA9;
+}
+.mobile-nav{
+	display:none;
+}
+.mobile-learning{
+	display:none;
+}
+.mobile-img{
+	display:none;
+}
+.mobile-line{
+	display:none;
+}
+.main{
+  background-color: #E3E3E3;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.main img{
+  padding: 2rem 1.5rem;
+  width: 60%;
+}
+.main-content{
+padding-right: 1.5rem;
+}
+.main-content h1{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main-content h3{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.button{
+  color: white;
+  background-color: #403E3C;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.button:hover{
+  background-color: #7FADA9;
+  transition: 1s;
+
+}
+
+h1{
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+h3{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  padding: 2rem 0rem 2rem 2rem;
+}
+.left{
+  padding-right: 1.5rem;
+  width: 60%
+}
+.left img{
+width: 100%;
+  padding-bottom: 1rem;
+}
+.left p{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+.right{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-left: 0.07rem solid #E3E3E3;
+  border-right: 0.07rem solid #E3E3E3;
+}
+.card{
+  border-top: 0.1rem solid #E3E3E3;
+  border-bottom: 0.1rem solid #E3E3E3;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.card img{
+  width: 35%;
+  height: inherit;
+  padding: 1rem;
+}
+.card p{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.card:last-child{
+  background-color: #E3E3E3;
+}
+.more{
+  text-decoration: none;
+  color: #4486E3;
+}
+
+.learning{
+  background-color: #E3E3E3;
+  padding: 2rem 4.5rem;
+}
+
+.courses{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.learning h1{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.course{
+  padding-bottom: 1.5rem;
+  background-color: white;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.course-details{
+  background-color: white;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+
+}
+.course img{
+  width: 100%;
+
+}
+.course-details h3{
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+.course-details p{
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+}
+.thesis{
+	padding-bottom:2rem;
+}
+.thesis h1{
+	padding-top: 2rem;
+	text-align: center;
+}
+.thesis-flex{
+	display: flex;
+	align-items:flex-start;
+	padding-top:2rem;
+}
+.left video{
+	padding: 0rem 1.5rem 1.5rem 0rem;
+}
+.thesis p{
+	padding-top: 0.5rem;
+	
+}
+.thesis-card {
+	display: flex;
+	align-items:center;
+}
+.thesis-card img{
+	width: 35%;
+	padding: 0.5rem;
+}
+.thesis-card:first-child{
+	 background-color: #E3E3E3;
+}
+
+.thesis-flex .left{
+	padding-right: 2rem;
+	padding-left:1.5rem;
+}
+footer{
+	display:flex;
+	font-size:0.8rem;
+	padding: 1rem 1.5rem;
+}
+
+footer span{
+	flex-grow:1;
+}
+.bottom-nav span{
+	margin:0.5rem;
+}
+
+
+@media only screen and (max-width: 480px){
+	
+	.desktop{
+		display:none;
+	}
+	.mobile-nav{
+		display: flex;
+		justify-content:space-around; 
+		height: 4rem;
+		width:90%;
+	}
+	.mobile-nav img:hover{
+		border-bottom: 0.2rem solid #7FADA9;
+	}
+	.mobile-img{
+		display:inline;
+	}
+	.main{
+		flex-direction:column;
+	}
+	.main img{
+		width: 100%;
+	}
+	.main-content{
+		padding: 0rem 1rem 2rem 1rem;
+	}
+	.right{
+		width: 100%;
+		border: none;
+		
+	}
+	.card{
+		border: none;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.card img{
+		width: 90%;
+	}
+	.card-details{
+		padding-left:2rem;
+	}
+	.card:last-child{
+	background-color: white;
+	}
+	.mobile-learning  {
+		display: flex;
+		flex-direction:column;
+		padding:2rem;
+		background-color: white;
+		
+	}
+	.mobile-learning h1{
+		text-align:center;
+		padding-top:2rem;
+		padding-bottom:1rem;
+	}
+	
+	.coursename-mobile h3{
+		padding:1rem ;
+		background-color: #E3E3E3;
+		margin:0.5rem;
+	}
+	.coursename-mobile h3:hover{
+		background-color: #7FADA9;
+		color: white;
+		transition: 1s;
+	}
+	.mobile-line{
+		display:flex;
+	}
+	.left{
+		width: 100%;
+	}
+	.bottom-nav{
+		display: none;
+	}
+}
